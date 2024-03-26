@@ -1,0 +1,47 @@
+# do not import all endpoints into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all endpoints from this module, import them with
+# from procurify_python_sdk.apis.path_to_api import path_to_api
+
+import enum
+
+
+class PathValues(str, enum.Enum):
+    OAUTH_TOKEN = "/oauth/token"
+    API_V2_AP_BILLS_ID = "/api/v2/ap/bills/{id}"
+    API_V2_AP_COMPANYPAYMENTMETHODS = "/api/v2/ap/company-payment-methods"
+    API_V2_AP_ITEMS = "/api/v2/ap/items"
+    API_V2_AP_PAYMENTS = "/api/v2/ap/payments"
+    API_V2_AP_PAYMENTS_ID_APPROVERCHOICES = "/api/v2/ap/payments/{id}/approver-choices"
+    API_V2_AP_VENDORPAYMENTMETHODS = "/api/v2/ap/vendor-payment-methods"
+    API_V2_CURRENCIES = "/api/v2/currencies"
+    API_V2_GLOBAL_ORDER_ITEMS = "/api/v2/global/order_items"
+    API_V2_GLOBAL_ORDERS = "/api/v2/global/orders"
+    API_V2_LOCATIONS = "/api/v2/locations"
+    API_V2_LOCATIONS_ID = "/api/v2/locations/{id}"
+    API_V2_PURCHASE_ORDER_REVISE_PROCURIFY_PO = "/api/v2/purchase_order/revise/{procurify_PO}"
+    API_V2_PURCHASE_ORDERS_ID = "/api/v2/purchase_orders/{id}"
+    API_V2_PURCHASE_ORDERS_ROLE_STATUS = "/api/v2/purchase_orders/{role}/{status}"
+    API_V3_ACCOUNTCODES = "/api/v3/account-codes"
+    API_V3_ACCOUNTCODES_ID = "/api/v3/account-codes/{id}"
+    API_V3_ACCOUNTS = "/api/v3/accounts"
+    API_V3_AP_BILLS = "/api/v3/ap/bills"
+    API_V3_CATALOGBUNDLES = "/api/v3/catalog-bundles"
+    API_V3_CATALOGITEMS = "/api/v3/catalog-items"
+    API_V3_CATALOGITEMS_ID = "/api/v3/catalog-items/{id}"
+    API_V3_CUSTOMFIELDS_ID = "/api/v3/custom-fields/{id}"
+    API_V3_CUSTOMFIELDS_ORDERITEMS = "/api/v3/custom-fields/order-items"
+    API_V3_DEPARTMENTS = "/api/v3/departments"
+    API_V3_DEPARTMENTS_ID = "/api/v3/departments/{id}"
+    API_V3_ORDERITEMS = "/api/v3/order-items"
+    API_V3_PERMISSIONS = "/api/v3/permissions"
+    API_V3_PERMISSIONS_GROUPS = "/api/v3/permissions/groups"
+    API_V3_PURCHASEORDERS_PROCURIFY_PO = "/api/v3/purchase-orders/{procurify_PO}"
+    API_V3_PURCHASEORDERS_PROCURIFY_PO_CLOSE = "/api/v3/purchase-orders/{procurify_PO}/close"
+    API_V3_PURCHASEORDERS_PROCURIFY_PO_REOPEN = "/api/v3/purchase-orders/{procurify_PO}/reopen"
+    API_V3_PURCHASEORDERS_BILLINGHISTORY = "/api/v3/purchase-orders/billing-history"
+    API_V3_REQUISITIONS = "/api/v3/requisitions"
+    API_V3_USERS = "/api/v3/users"
+    API_V3_USERS_ID = "/api/v3/users/{id}"
+    API_V3_USERS_ME = "/api/v3/users/me"
+    API_V3_VENDORS = "/api/v3/vendors"
+    API_V3_VENDORS_ID = "/api/v3/vendors/{id}"
